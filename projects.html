@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Lahrani | Projects</title>
+    <meta name="description" content="Detailed portfolio of technical projects by Dev Lahrani, focusing on Systems Design and Low-Level Engineering.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div id="loader">
+        <div class="loader-content"></div>
+    </div>
+    
+    <div class="progress-bar"></div>
+    <div class="custom-cursor"></div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" aria-label="Dev Lahrani Home">DL.</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="achievements.html">Achievements</a>
+                <a href="skills.html">Skills</a>
+                <a href="#" class="btn-primary-small" style="padding: 5px 15px; border-radius: 4px; border: 1px solid var(--accent-color); font-size: 0.8rem; margin-left: 10px;">CV</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="projects-hero" class="reveal">
+            <h2>01. TECHNICAL PROJECTS</h2>
+            <p>A deep dive into the systems, tools, and architectures I've built. Most of these projects are open-source and available on my <a href="https://github.com/Dev-Lahrani" target="_blank" class="highlight">GitHub</a>.</p>
+        </section>
+
+        <section id="projects-detailed" class="reveal">
+            <div class="project-detailed-card">
+                <div class="project-header">
+                    <span class="project-number">01.</span>
+                    <h3>HVAC Health Monitor</h3>
+                </div>
+                <div class="project-content">
+                    <p>An IoT-driven predictive maintenance system for industrial HVAC units, leveraging machine learning to detect anomalies before they lead to failure.</p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Sensor data acquisition (Temperature, Vibration, Power).</li>
+                            <li>Anomaly detection using Random Forest/LSTM models.</li>
+                            <li>Real-time dashboard for status visualization.</li>
+                            <li>Automated alert system for maintenance teams.</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span>Python</span>
+                        <span>IoT Hub</span>
+                        <span>TensorFlow</span>
+                        <span>Scikit-Learn</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Dev-Lahrani" target="_blank" class="btn-secondary-small">View Repository</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-detailed-card">
+                <div class="project-header">
+                    <span class="project-number">02.</span>
+                    <h3>Smart Infant Care</h3>
+                </div>
+                <div class="project-content">
+                    <p>A smart health monitoring platform for infants using wearable IoT sensors and AI to detect potential health issues early.</p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Multi-modal vital signs tracking (Heart rate, SpO2).</li>
+                            <li>Cry audio analysis and sleep pattern recognition.</li>
+                            <li>Wellness score generation and real-time alerts.</li>
+                            <li>Responsive monitoring dashboard with comfort control.</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span>IoT</span>
+                        <span>AI/ML</span>
+                        <span>Cloud Analytics</span>
+                        <span>Responsive UI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Dev-Lahrani/smartInfantCare" target="_blank" class="btn-secondary-small">View Repository</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-detailed-card">
+                <div class="project-header">
+                    <span class="project-number">03.</span>
+                    <h3>Py-Port-Checker</h3>
+                </div>
+                <div class="project-content">
+                    <p>A Python-based utility for monitoring and managing active network ports on a system, featuring a tabular display for easy status tracking.</p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Active port scanning and identification.</li>
+                            <li>Capabilities to disable, kill, and enable specific ports.</li>
+                            <li>Tabular data presentation for clear visualization.</li>
+                            <li>System process mapping to network ports.</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span>Python</span>
+                        <span>Network Security</span>
+                        <span>Tabulate</span>
+                        <span>System APIs</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Dev-Lahrani/py-port-checker" target="_blank" class="btn-secondary-small">View Repository</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-detailed-card">
+                <div class="project-header">
+                    <span class="project-number">04.</span>
+                    <h3>Collaborative Threshold Cryptography</h3>
+                </div>
+                <div class="project-content">
+                    <p>A secure real-time collaborative editing platform that leverages threshold cryptography to ensure data privacy and distributed trust among editors.</p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Distributed key management for document decryption.</li>
+                            <li>Secure real-time synchronization between clients.</li>
+                            <li>Protection against single-point-of-failure in trust.</li>
+                            <li>End-to-end encrypted collaborative workflow.</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span>Cryptography</span>
+                        <span>Node.js</span>
+                        <span>WebSockets</span>
+                        <span>Security</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Dev-Lahrani/Collaborative-editing-using-threshold-cryptography" target="_blank" class="btn-secondary-small">View Repository</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-detailed-card">
+                <div class="project-header">
+                    <span class="project-number">05.</span>
+                    <h3>Live Disaster Tracker</h3>
+                </div>
+                <div class="project-content">
+                    <p>A real-time visualization tool that aggregates weather data and natural disaster alerts globally onto an interactive map interface.</p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Interactive live map with weather overlays.</li>
+                            <li>Natural disaster alert integration (Earthquakes, Floods).</li>
+                            <li>Global real-time data aggregation from multiple APIs.</li>
+                            <li>Visual heatmaps for disaster intensity.</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span>JavaScript</span>
+                        <span>Leaflet/Mapbox</span>
+                        <span>Weather APIs</span>
+                        <span>Real-time Data</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Dev-Lahrani/Live-weather-and-Natural-disaster-viewing-using-a-live-map" target="_blank" class="btn-secondary-small">View Repository</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-detailed-card">
+                <div class="project-header">
+                    <span class="project-number">06.</span>
+                    <h3>ESP32 IoT Suite</h3>
+                </div>
+                <div class="project-content">
+                    <p>A collection of IoT solutions developed for the ESP32 platform, including remote monitoring and localized file sharing capabilities.</p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>ESP32-CAM firmware with motion detection and live streaming.</li>
+                            <li>Local Wi-Fi file sharing server hosted on ESP32.</li>
+                            <li>Low-power optimization for battery-operated deployment.</li>
+                            <li>Custom web interface for hardware control.</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span>C++ (Arduino/IDF)</span>
+                        <span>IoT</span>
+                        <span>Embedded Systems</span>
+                        <span>HTTP/FTP Protocols</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Dev-Lahrani/ESP-32-cam-code" target="_blank" class="btn-secondary-small">View CAM Repo</a>
+                        <a href="https://github.com/Dev-Lahrani/ESP-32-File-sharing" target="_blank" class="btn-secondary-small" style="margin-left: 10px;">View File Sharing Repo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-detailed-card">
+                <div class="project-header">
+                    <span class="project-number">07.</span>
+                    <h3>News Web Scraper</h3>
+                </div>
+                <div class="project-content">
+                    <p>An automated intelligence tool designed to scrape and aggregate news from various digital publications for centralized monitoring.</p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Automated headline and summary extraction.</li>
+                            <li>Multi-source support with custom parsing logic.</li>
+                            <li>Scheduled scraping tasks for continuous updates.</li>
+                            <li>Clean data output for easy ingestion.</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span>Python</span>
+                        <span>BeautifulSoup</span>
+                        <span>Selenium</span>
+                        <span>Automation</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Dev-Lahrani/news-web-scraper" target="_blank" class="btn-secondary-small">View Repository</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills-summary" class="reveal" style="margin-top: 80px;">
+            <h2>02. CORE SKILLS</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Systems</h3>
+                    <p>System Design, Operating Systems, Computer Architecture, Networking.</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Development</h3>
+                    <p>C++, C, Rust (Learning), Python, Linux Kernel API, Socket Programming.</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <p>Git, Bash, GDB, Valgrind, Docker, IoT Frameworks.</p>
+                </div>
+            </div>
+            <div style="margin-top: 30px; text-align: center;">
+                <a href="skills.html" class="highlight">View Full Skill Stack →</a>
+            </div>
+        </section>
+
+        <section id="cta" class="reveal">
+            <div class="collaboration-console">
+                <div class="console-header">
+                    <div class="console-title">System.Collaboration_Console</div>
+                    <div class="console-controls">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="console-body">
+                    <h2>READY TO BUILD?</h2>
+                    <p>I'm always looking for ambitious projects and collaborations. Whether it's low-level systems, high-performance architecture, or innovative IoT solutions—let's build something exceptional.</p>
+                    <div class="console-actions">
+                        <a href="mailto:devlahrani10@gmail.com" class="btn-console primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            Send Email
+                        </a>
+                        <button class="btn-console" onclick="copyEmail()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                            Copy Address
+                        </button>
+                        <a href="https://www.linkedin.com/in/dev-lahrani-05424032a/" target="_blank" class="btn-console">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div id="copy-feedback" class="copy-feedback">Email copied to clipboard!</div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2023-2025 Dev Lahrani. Built with the grind mindset.</p>
+            <p style="font-family: var(--font-mono); color: var(--accent-color); margin-top: 10px; letter-spacing: 2px;">"THE GRIND IS ETERNAL"</p>
+        </footer>
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            loader.classList.add('fade-out');
+        });
+
+        const cursor = document.querySelector('.custom-cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.querySelectorAll('a, button, .project-detailed-card').forEach(link => {
+            link.addEventListener('mouseenter', () => cursor.classList.add('hovered'));
+            link.addEventListener('mouseleave', () => cursor.classList.remove('hovered'));
+        });
+
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        ScrollReveal().reveal('.reveal', {
+            delay: 400,
+            distance: '30px',
+            origin: 'bottom',
+            duration: 1000,
+            interval: 200
+        });
+
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.querySelector(".progress-bar").style.width = scrolled + "%";
+        };
+
+        function copyEmail() {
+            const email = "devlahrani10@gmail.com";
+            navigator.clipboard.writeText(email).then(() => {
+                const feedback = document.getElementById('copy-feedback');
+                feedback.classList.add('show');
+                setTimeout(() => {
+                    feedback.classList.remove('show');
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>

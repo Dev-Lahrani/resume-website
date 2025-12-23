@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Lahrani | About Me</title>
+    <meta name="description" content="Learn more about Dev Lahrani's mission, grind mentality, and focus on Systems Design Engineering.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div id="loader">
+        <div class="loader-content"></div>
+    </div>
+    
+    <div class="progress-bar"></div>
+    <div class="custom-cursor"></div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" aria-label="Dev Lahrani Home">DL.</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="achievements.html">Achievements</a>
+                <a href="skills.html">Skills</a>
+                <a href="#" class="btn-primary-small" style="padding: 5px 15px; border-radius: 4px; border: 1px solid var(--accent-color); font-size: 0.8rem; margin-left: 10px;">CV</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="reveal">
+            <h2>01. ABOUT</h2>
+            <p>I am a second-year Computer Science student at <span class="highlight">Vishwakarma Institute of Technology, Pune (VIT Pune)</span>.</p>
+            <p>I believe in skill more than grades. My philosophy is rooted in the <span class="highlight">grind mentality</span>—a commitment to continuous improvement, deep technical understanding, and the relentless pursuit of engineering mastery. For me, engineering isn't just a career; it's a discipline inspired by the complexity and logic seen in the technical world and its portrayal in media.</p>
+            
+            <div class="skills-grid" style="margin-top: 30px;">
+                <div class="skill-category">
+                    <h3>Motivation</h3>
+                    <p>Inspired by pioneers like <span class="highlight">Linus Torvalds</span> and <span class="highlight">Kevin Mitnick</span>, I view the "grind" as a journey of sitting for hours, dedicated to projects and courses, perfecting the craft of systems engineering.</p>
+                </div>
+                <div class="skill-category">
+                    <h3>The Environment</h3>
+                    <p>I thrive in a high-discipline environment. A <span class="highlight">spotless, organized desk</span> is non-negotiable for my workflow. Paired with serious, focused music, it creates the ideal space for deep work.</p>
+                </div>
+            </div>
+
+            <h3 style="color: var(--accent-color); margin: 40px 0 20px; font-family: var(--font-mono);">Current Focus & Vision</h3>
+            <p>Currently, I am diving deep into <span class="highlight">Rust programming</span> and <span class="highlight">System Architecture</span>. My ultimate goal is to apply my skills as a <span class="highlight">Systems Design Engineer</span> to make human life easier and more efficient.</p>
+            <p>I am working towards a future in a tech-rich, peaceful, and innovative environment—aiming for global hubs like <span class="highlight">Sweden or Monaco</span> where engineering excellence is a standard.</p>
+
+            <h3 style="color: var(--accent-color); margin: 40px 0 20px; font-family: var(--font-mono);">Beyond the Code</h3>
+            <p>When I'm not in the "grind," I find my rhythm in <span class="highlight">swimming</span> or diving into the worlds of <span class="highlight">Webnovels and MTL novels</span>. I manage my life through strict time-blocking—focusing on one thing at a time to ensure everything gets the dedication it deserves.</p>
+        </section>
+
+        <section id="cta" class="reveal" style="margin-top: 80px;">
+            <div class="collaboration-console">
+                <div class="console-header">
+                    <div class="console-title">System.Collaboration_Console</div>
+                    <div class="console-controls">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="console-body">
+                    <h2>READY TO BUILD?</h2>
+                    <p>I'm always looking for ambitious projects and collaborations. Whether it's low-level systems, high-performance architecture, or innovative IoT solutions—let's build something exceptional.</p>
+                    <div class="console-actions">
+                        <a href="mailto:devlahrani10@gmail.com" class="btn-console primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            Send Email
+                        </a>
+                        <button class="btn-console" onclick="copyEmail()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                            Copy Address
+                        </button>
+                        <a href="https://www.linkedin.com/in/dev-lahrani-05424032a/" target="_blank" class="btn-console">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div id="copy-feedback" class="copy-feedback">Email copied to clipboard!</div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2023-2025 Dev Lahrani. Built with the grind mindset.</p>
+            <p style="font-family: var(--font-mono); color: var(--accent-color); margin-top: 10px; letter-spacing: 2px;">"THE GRIND IS ETERNAL"</p>
+        </footer>
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            loader.classList.add('fade-out');
+        });
+
+        // Custom Cursor Logic
+        const cursor = document.querySelector('.custom-cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.querySelectorAll('a, button, .project-card').forEach(link => {
+            link.addEventListener('mouseenter', () => cursor.classList.add('hovered'));
+            link.addEventListener('mouseleave', () => cursor.classList.remove('hovered'));
+        });
+
+        // Mobile Menu Logic
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        ScrollReveal().reveal('.reveal', {
+            delay: 400,
+            distance: '30px',
+            origin: 'bottom',
+            duration: 1000,
+            interval: 200
+        });
+
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.querySelector(".progress-bar").style.width = scrolled + "%";
+        };
+
+        function copyEmail() {
+            const email = "devlahrani10@gmail.com";
+            navigator.clipboard.writeText(email).then(() => {
+                const feedback = document.getElementById('copy-feedback');
+                feedback.classList.add('show');
+                setTimeout(() => {
+                    feedback.classList.remove('show');
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
