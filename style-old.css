@@ -1,13 +1,18 @@
 :root {
-    --bg-color: #1a2a1a; /* Dark Forest Green */
-    --accent-color: #5A9F68; /* The requested green */
-    --text-color: #ffffff;
-    --heading-color: #5A9F68;
+    --bg-color: #0a0e27;
+    --bg-secondary: #0f1419;
+    --accent-primary: #00ff41;
+    --accent-secondary: #00d4ff;
+    --accent-glow: #ff00ff;
+    --text-color: #e0e6f1;
+    --text-muted: #8892b0;
+    --heading-color: #ccd6f6;
     --font-mono: 'JetBrains Mono', monospace;
     --font-sans: 'Inter', sans-serif;
-    --nav-bg: rgba(26, 42, 26, 0.95);
-    --card-bg: #243a24;
-    --hover-green: #6eb57d;
+    --nav-bg: rgba(10, 14, 39, 0.98);
+    --card-bg: rgba(15, 20, 45, 0.7);
+    --card-border: rgba(0, 255, 65, 0.2);
+    --shadow-glow: 0 0 20px rgba(0, 255, 65, 0.15);
 }
 
 * {

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Lahrani | Cybersecurity Specialist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="gradient-bg"></div>
+    <div class="grid-overlay"></div>
+    <canvas id="bg-canvas"></canvas>
+    <div class="noise-overlay"></div>
+    
+    <div class="scroll-progress"></div>
+    
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">DEV</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link contact-btn">Contact</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-spotlight"></div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">Available for opportunities</span>
+                </div>
+                <div class="hero-title-wrapper">
+                    <h1 class="hero-title">
+                        <div class="title-line" style="--delay: 0;">Hi, I'm</div>
+                        <div class="title-name glitch" style="--delay: 0.1;" data-text="Dev Lahrani">Dev Lahrani</div>
+                        <div class="title-role" style="--delay: 0.2;">Cybersecurity Specialist</div>
+                    </h1>
+                </div>
+                <p class="hero-description">
+                    Second year CS student at <span class="highlight">VIT Pune</span>, specializing in ethical hacking, 
+                    network security, and building <span class="highlight">secure digital systems</span>. THE GRIND IS ETERNAL 💪
+                </p>
+                <div class="hero-cta">
+                    <a href="projects.html" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/Dev-Lahrani" target="_blank" class="social-icon" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dev-lahrani-05424032a/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:devlahrani10@gmail.com" class="social-icon" aria-label="Email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+                <div class="floating-card card-1">
+                    <div class="card-icon">🔐</div>
+                    <div class="card-label">Security</div>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-icon">💻</div>
+                    <div class="card-label">Development</div>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-icon">🛡️</div>
+                    <div class="card-label">Protection</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">About Me</span>
+                    <h2 class="section-title">The Grind Mentality</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-content">
+                        <p class="about-text">
+                            I'm a second-year Computer Science student at <strong>Vishwakarma Institute of Technology, Pune</strong>, 
+                            with a relentless focus on cybersecurity and ethical hacking.
+                        </p>
+                        <p class="about-text">
+                            My philosophy is rooted in the <strong>grind mentality</strong>—continuous improvement, 
+                            deep technical understanding, and the pursuit of engineering mastery. For me, 
+                            cybersecurity isn't just a field; it's a discipline that demands precision and dedication.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">8.85+</div>
+                                <div class="stat-label">CGPA</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">10+</div>
+                                <div class="stat-label">Projects</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">2nd</div>
+                                <div class="stat-label">Year Student</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="code-window">
+                            <div class="window-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="window-body">
+                                <pre><code><span class="code-comment"># whoami</span>
+<span class="code-key">name:</span> <span class="code-string">"Dev Lahrani"</span>
+<span class="code-key">role:</span> <span class="code-string">"Cybersecurity Student"</span>
+<span class="code-key">location:</span> <span class="code-string">"Pune, India"</span>
+<span class="code-key">focus:</span> [
+  <span class="code-string">"Ethical Hacking"</span>,
+  <span class="code-string">"Network Security"</span>,
+  <span class="code-string">"Pentesting"</span>
+]
+<span class="code-key">motto:</span> <span class="code-string">"THE GRIND IS ETERNAL"</span></code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="section section-dark">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <a href="projects.html" class="project-link">View Details →</a>
+                            </div>
+                            <div class="project-icon-large">🔧</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">HVAC Health Monitor</h3>
+                            <p class="project-description">
+                                IoT-driven predictive maintenance system using ML for anomaly detection 
+                                in industrial HVAC units.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">IoT</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">TensorFlow</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <a href="projects.html" class="project-link">View Details →</a>
+                            </div>
+                            <div class="project-icon-large">👶</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Smart Infant Care</h3>
+                            <p class="project-description">
+                                AI-powered wearable platform for real-time infant health monitoring 
+                                with early anomaly detection.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">AI/ML</span>
+                                <span class="tag">IoT</span>
+                                <span class="tag">Cloud</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <a href="projects.html" class="project-link">View Details →</a>
+                            </div>
+                            <div class="project-icon-large">🔐</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Collaborative Crypto</h3>
+                            <p class="project-description">
+                                Secure real-time collaborative editor using threshold cryptography 
+                                for distributed trust.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Cryptography</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">WebRTC</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="section-footer">
+                    <a href="projects.html" class="btn btn-outline">
+                        <span>View All Projects</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Expertise</span>
+                    <h2 class="section-title">Skills & Technologies</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-icon">🔒</div>
+                        <h3 class="skill-title">Security</h3>
+                        <ul class="skill-list">
+                            <li>Ethical Hacking</li>
+                            <li>Network Security</li>
+                            <li>Vulnerability Assessment</li>
+                            <li>Digital Forensics</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-icon">💻</div>
+                        <h3 class="skill-title">Development</h3>
+                        <ul class="skill-list">
+                            <li>Python</li>
+                            <li>C / C++</li>
+                            <li>JavaScript</li>
+                            <li>Linux / Bash</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-icon">🛠️</div>
+                        <h3 class="skill-title">Tools</h3>
+                        <ul class="skill-list">
+                            <li>Wireshark</li>
+                            <li>Nmap</li>
+                            <li>Git / GitHub</li>
+                            <li>Docker</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-icon">🧠</div>
+                        <h3 class="skill-title">Core CS</h3>
+                        <ul class="skill-list">
+                            <li>Data Structures</li>
+                            <li>Operating Systems</li>
+                            <li>Computer Networks</li>
+                            <li>DBMS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-dark">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-content">
+                        <span class="section-label">Get In Touch</span>
+                        <h2 class="section-title">Let's Build Something Secure</h2>
+                        <p class="contact-text">
+                            I'm always open to discussing new projects, creative ideas, or opportunities 
+                            to be part of your cybersecurity initiatives. Let's connect!
+                        </p>
+                        <div class="contact-info">
+                            <a href="mailto:devlahrani10@gmail.com" class="contact-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                <span>devlahrani10@gmail.com</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/dev-lahrani-05424032a/" target="_blank" class="contact-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                                <span>LinkedIn Profile</span>
+                            </a>
+                            <a href="https://github.com/Dev-Lahrani" target="_blank" class="contact-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                                <span>GitHub Profile</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-cta">
+                        <a href="mailto:devlahrani10@gmail.com" class="btn btn-primary btn-large">
+                            <span>Send Me A Message</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2023-2026 Dev Lahrani. Built with dedication.</p>
+                <p class="footer-motto">"THE GRIND IS ETERNAL"</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
